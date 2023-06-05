@@ -16,3 +16,120 @@
   }
 }
 
+
+
+.animate-float {
+	animation: floating 3s ease-in-out infinite
+}
+
+@keyframes floating {
+	0% { transform: translateY(0) ; }
+	50% { transform: translateY(-16px) translateX(20px); }
+	100% { transform: translateY(0); }
+}
+
+
+
+/*DEVIDER*/
+.custom-shape-divider-top-1684665343 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1684665343 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+/*DEVIDER*/
+
+.custom-shape-divider-top-1684665343 .shape-fill {
+  fill: #FFFFFF;
+}
+
+
+
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+
+.marqee-text-animation{
+  position: relative;
+
+  animation: marquee 5s infinite forwards ease;
+}
+
+
+@keyframes marquee{
+  0%{
+    left: 0;
+  }
+  
+  
+  50%{
+    left: -110%;
+  }
+  
+}
+
+
+.card ::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  }
+
+
+  *{
+    user-select: none;
+  }
+
+
+.animate-selected{
+  animation: selected 0.5s 1 ease;
+}
+
+
+@keyframes selected {
+  0%{
+    outline-width: 0px;
+    outline-color: #87cfeb8d;
+  }
+
+  100%{
+    outline-width: 38px;
+    outline-color: #87cfeb00;
+  }
+}

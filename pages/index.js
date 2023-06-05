@@ -1,14 +1,23 @@
-import Image from 'next/image'
-import Navbar from '../components/Navbar'
+import { useEffect } from 'react';
 import Main from '../components/Main'
 import Link from 'next/link'
-import Layout from '@/components/Layout'
+import ContextAPI from '@/ContextAPI';
+
+
 
 export default function Home() {
-  return (<div>
-      <Main/>
-     <Link className="bg-amber-500 p-5 rounded-lg text-white font-black block w-fit my-10" href={"/profile"}>Profile</Link>
-   
-    
-  </div>)
+  useEffect(()=>{
+    try{
+      AOS.init();
+    }catch(e){
+      setTimeout(()=>{
+        AOS.init();
+      },1500)  
+    }
+  },[])
+
+  return (
+    <ContextAPI>
+        <Main/>
+    </ContextAPI>)
 }
