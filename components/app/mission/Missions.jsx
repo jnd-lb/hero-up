@@ -222,7 +222,7 @@ const {selectedMissionAndLog,setSelectedMissionAndLog} = useContextAPI()
   return (
     <div className='w-3/4 mx-auto'>
 
-      {isLoading&&<Loading/>}
+      {/* {isLoading&&<Loading/>} */}
       <DayFilltersControllers setActiveDay={setActiveDay} todayNumber={todayNumber} activeDay={activeDay}/>
       
       

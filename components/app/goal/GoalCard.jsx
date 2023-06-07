@@ -50,7 +50,7 @@ function GoalCard({goal,handleDelete}) {
     
     <p className="font-thin relative z-20 text-white flex items-center gap-1">
       <span className='font-light'>Pillar: </span>
-      <Link href={"/pillars/"+goal.pillar?.id} className="flex-grow overflow-hidden">
+      <Link href={"/app/pillar/"+goal.pillar?.id} className="flex-grow overflow-hidden">
         <span className={`${goal.pillar?.name.length>10&&"marqee-text-animation"} text-sm whitespace-nowrap`}>{goal.pillar?.name}</span>
       </Link>
     </p>

@@ -16,8 +16,5 @@ export default function Home() {
     }
   },[])
 
-  return (
-    <ContextAPI>
-        <Main/>
-    </ContextAPI>)
+  return (<Main/>)
 }
